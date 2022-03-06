@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Custome css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-danger">Bootstrap components</h1>
+        <hr>
+        <h2 class="text-success">Accordion</h2>
+        <div class="accordion accordion-flush" id="accordion_example">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading_one">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_one" aria-expanded="true" aria-controls="collapse_one">
+                        This is accordion one
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapse_one" aria-labelledby="heading_one" data-bs-parents="#accordion_example">
+                    <div class="accordion-body">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae architecto consequuntur, alias aliquam tenetur accusantium eius. Ab necessitatibus exercitationem, sint doloremque earum vel nemo dolores, nesciunt provident, dicta et error.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading_two">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_two" aria-expended="false" aria-controls="collapse_two">
+                        This accordion two
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapse_two" aria-labelledby="heading_two" data-bs-parents="#accordion_example">
+                    <div class="accordion-body">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam rerum beatae numquam enim repellat tenetur ab, molestiae velit expedita atque blanditiis quo aperiam saepe, vel reiciendis, fuga cumque dolore!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading_three">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse_three" aria-expended="false" aria-controls="collapse_three">
+                        This accordion three
+                    </button>
+                </h2>
+                <div class="accordion-collapse collapse" id="collapse_three" aria-labelledby="heading_three" data-bs-parents="#accordion_example">
+                    <div class="accordion-body">
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus laboriosam atque aspernatur tempora impedit? Sit eligendi laboriosam velit laborum, consequuntur quos culpa, amet porro necessitatibus magni quisquam sint obcaecati quo!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h2 class="text-success">Accordion flush</h2>
+        <div class="accordion accordion-flush" id="flush_example">
+          <div class="accordion-item">
+            <h2 class="accordion-heading" id="heading_one">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="collapse_one">
+                This is accordion one
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="flush-collapseOne" aria-labelledby="heading_one" data-bs-parents="#flush_example">
+              <div class="accordion-body">
+                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias nostrum debitis perferendis voluptas similique ex aperiam soluta impedit maxime officiis neque minus possimus, ullam unde veniam ab nulla. Ex, magnam.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-heading" id="heading_two">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="collapse-two">
+                This is accordion two
+              </button>
+            </h2>
+            <div class="accordion-collapse collapse" id="flush-collapseTwo" aria-labelledby="heading_two" data-bs-parents="#flush_example">
+              <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, placeat totam deserunt saepe adipisci itaque? Obcaecati sunt vero distinctio laboriosam nostrum voluptatibus exercitationem veritatis dicta corrupti ducimus culpa, ipsum iste?</p>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h2 class="text-primary">Bootstrap alert</h2>
+        <div class="alert alert-warning" role="alert">
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ipsa eos quo explicabo nobis dolores quae numquam molestiae veritatis tempore!</p>
+        </div>
+        <hr>
+        <div class="alert alert-danger" role="alert">
+          <p class="lead">Lorem ipsum dolor sit amet <a href="#" class="alert-link">alert link</a> consectetur adipisicing elit. Maiores, non!</p>
+        </div>
+        <hr>
+        <div class="alert alert-success" role="alert">
+          <h4 class="alert-heading">Alert heading</h4>
+          <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam hic iusto aut totam, saepe quas perspiciatis ducimus eveniet fuga aspernatur!</p>
+          <hr>
+          <p class="lead mb-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, ratione?</p>
+        </div>
+        <hr>
+        <div class="alert alert-dismissible fade show alert-primary" role="alert">
+          <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis quod ut incidunt dolorem eveniet recusandae numquam sed.</p>
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+        </div><hr>
+        <h2 class="text-primary">Bootstrap Badge</h2>
+        <h1>This is heding <span class="badge bg-primary">One</span></h1>
+        <h2>This is heding <span class="badge bg-primary">Two</span></h2>
+        <h3>This is heding <span class="badge bg-primary">Three</span></h3>
+        <h4>This is heding <span class="badge bg-primary">Four</span></h4>
+        <h5>This is heding <span class="badge bg-primary">Five</span></h5>
+        <h6>This is heding <span class="badge bg-primary">Six</span></h6>
+        <hr>
+        <button class="btn btn-primary">
+          Notification <span class="badge bg-secondary">4</span>
+        </button>
+        <hr>
+        <button class="btn btn-primary position-relative">
+          Message <span class="position-absolute top-0 start-100 badge rounded-pill bg-danger translate-middle">99+</span>
+        </button>
+        <hr>
+        <h2 class="text-primary">Bootstrap Button</h2>
+        <button class="btn btn-primary">Button</button>
+        <button class="btn btn-secondary">Button</button>
+        <button class="btn btn-warning">Button</button>
+        <button class="btn btn-danger">Button</button>
+        <button class="btn btn-info">Button</button>
+        <button class="btn btn-dark">Button</button>
+        <button class="btn btn-light">Button</button>
+        <button class="btn btn-link">Button</button>
+        <hr>
+        <button class="btn btn-outline-primary">Button</button>
+        <button class="btn btn-outline-secondary">Button</button>
+        <button class="btn btn-outline-warning">Button</button>
+        <button class="btn btn-outline-danger">Button</button>
+        <button class="btn btn-outline-info">Button</button>
+        <button class="btn btn-outline-dark">Button</button>
+        <button class="btn btn-outline-light">Button</button>
+        <button class="btn btn-outline-link">Button</button>
+        <hr>
+        <button class="btn btn-primary btn-lg">Button</button>
+        <button class="btn btn-primary btn-lsm">Button</button>
+        <hr>
+        <h2 class="text-primary">Bootstrap Button Group</h2>
+        <div class="btn-group" role="group">
+          <button class="btn btn-primary">Left</button>
+          <button class="btn btn-primary">Center</button>
+          <button class="btn btn-primary">Right</button>
+        </div>
+        <hr>
+        <div class="btn-group" role="group">
+          <button class="btn btn-primary">Left</button>
+          <button class="btn btn-warning">center</button>
+          <button class="btn btn-danger">right</button>
+        </div>
+        <hr>
+        <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+          <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+          <label for="btncheck1" class="btn btn-outline-primary">Check one</label>
+
+          <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+          <label for="btncheck2" class="btn btn-outline-primary">Check Two</label>
+
+          <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+          <label for="btncheck3" class="btn btn-outline-primary">Check Three</label>
+        </div>
+        <hr>
+        <div class="btn-group" role="group">
+          <input type="radio" name="btnradio" id="radio1" class="btn-check" autocomplete="off" checked>
+          <label for="radio1" class="btn btn-outline-primary">Radio One</label>
+
+          <input type="radio" name="btnradio" id="radio2" class="btn-check" autocomplete="off">
+          <label for="radio2" class="btn btn-outline-primary">Radio Two</label>
+
+          <input type="radio" name="btnradio" id="radio3" class="btn-check" autocomplete="off">
+          <label for="radio3" class="btn btn-outline-primary">Radio Three</label>
+        </div>
+        <hr>
+        <div class="btn-toolbar" role="toolbar">
+          <div class="btn-group me-2" role="group">
+            <button class="btn btn-primary">1</button>
+            <button class="btn btn-primary">2</button>
+            <button class="btn btn-primary">3</button>
+            <button class="btn btn-primary">4</button>
+            <button class="btn btn-primary">5</button>
+          </div>
+          <div class="btn-group" role="group">
+            <button class="btn btn-danger">6</button>
+            <button class="btn btn-danger">7</button>
+            <button class="btn btn-danger">8</button>
+            <button class="btn btn-danger">9</button>
+          </div>
+        </div>
+        <hr>
+        <h2 class="text-primary">Bootstrap Cards</h2>
+        <div class="card p-2" style="width: 300px;">
+          <img src="images/burder.png" alt="" class="card-img-top">
+          <div class="card-body">
+            <h4 class="card-title">This is card Title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, iste!</p>
+            <button class="btn btn-primary">Card Button</button>
+          </div>
+        </div>
+        <hr>
+        <div class="card" style="width: 18rem;">
+          <img src="images/burder.png" alt="" class="card-img-top">
+          <h4 class="card-header">Card Title</h4>
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, enim voluptas laudantium corrupti quasi minus!</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">List Item</li>
+              <li class="list-group-item">List Item</li>
+              <li class="list-group-item">List Item</li>
+            </ul>
+            <button class="btn btn-primary">Card Button</button>
+          </div>
+        </div>
+        <hr>
+        <div class="card" style="max-width: 600px;">
+          <div class="row">
+            <div class="col-sm-4">
+              <img src="images/burder.png" alt="" class="img-fluid rounded-start">
+            </div>
+            <div class="col-sm-8">
+              <div class="card-body">
+                <h4 class="card-title">Card Title</h4>
+                <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde quo itaque asperiores quisquam id quasi nesciunt pariatur nemo reiciendis deleniti!</p>
+                <p class="card-text"><small class="text-muted">Last Update 5mins ago</small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="card text-light bg-primary mb-3" style="width: 18rem;">
+          <h3 class="card-header">Header</h3>
+          <div class="card-body">
+            <h4 class="card-title">This is card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt ipsa. Repellendus commodi atque hic.</p>
+          </div>
+        </div>
+        <div class="card text-light bg-secondary mb-3" style="width: 18rem;">
+          <h3 class="card-header">Header</h3>
+          <div class="card-body">
+            <h4 class="card-title">This is card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt ipsa. Repellendus commodi atque hic.</p>
+          </div>
+        </div>
+        <div class="card text-light bg-success" style="width: 18rem;">
+          <h3 class="card-header">Header</h3>
+          <div class="card-body">
+            <h4 class="card-title">This is card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt ipsa. Repellendus commodi atque hic.</p>
+          </div>
+        </div>
+        <div class="card text-light bg-info mb-3" style="width: 18rem;">
+          <h3 class="card-header">Header</h3>
+          <div class="card-body">
+            <h4 class="card-title">This is card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt ipsa. Repellendus commodi atque hic.</p>
+          </div>
+        </div>
+        <div class="card text-light bg-danger mb-3" style="width: 18rem;">
+          <h3 class="card-header">Header</h3>
+          <div class="card-body">
+            <h4 class="card-title">This is card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt ipsa. Repellendus commodi atque hic.</p>
+          </div>
+        </div>
+        <div class="card text-light bg-warning mb-3" style="width: 18rem;">
+          <h3 class="card-header">Header</h3>
+          <div class="card-body">
+            <h4 class="card-title">This is card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt ipsa. Repellendus commodi atque hic.</p>
+          </div>
+        </div>
+        <div class="card text-dark bg-light mb-3" style="width: 18rem;">
+          <h3 class="card-header">Header</h3>
+          <div class="card-body">
+            <h4 class="card-title">This is card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt ipsa. Repellendus commodi atque hic.</p>
+          </div>
+        </div>
+        <div class="card text-light bg-dark mb-3" style="width: 18rem;">
+          <h3 class="card-header">Header</h3>
+          <div class="card-body">
+            <h4 class="card-title">This is card title</h4>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, nesciunt ipsa. Repellendus commodi atque hic.</p>
+          </div>
+        </div>
+        <hr>
+        <div class="card-group">
+          <div class="card p-3">
+            <img src="images/burder.png" alt="" class="card-img-top">
+            <div class="card-boy">
+              <h4 class="card-title">Card Title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quo id a quaerat dignissimos dolore.</p>
+              <button class="btn btn-primary">Card Button</button>
+            </div>
+          </div>
+          <div class="card p-3">
+            <img src="images/burder.png" alt="" class="card-img-top">
+            <div class="card-boy">
+              <h4 class="card-title">Card Title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quo id a quaerat dignissimos dolore.</p>
+              <button class="btn btn-primary">Card Button</button>
+            </div>
+          </div>
+          <div class="card p-3">
+            <img src="images/burder.png" alt="" class="card-img-top">
+            <div class="card-boy">
+              <h4 class="card-title">Card Title</h4>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae quo id a quaerat dignissimos dolore.</p>
+              <button class="btn btn-primary">Card Button</button>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <h2 class="text-primary">Bootstrap Modal</h2>
+        <!-- Button Trigger Modal -->
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">Launch Modal</button>
+        <!-- Modal -->
+        <div class="modal fade" id="modal" data-bs-backdrop="static" data-bs-kayboard="false" tabindex="-1" aria-labelledby="modalHeader" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h3 class="modal-title" id="modalHeader">Modal Title</h3>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="close"></button>
+              </div>
+              <div class="modal-body">
+                <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, recusandae.</p>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button class="btn btn-primary">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- js links -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <!-- Custome js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
